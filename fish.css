@@ -1,0 +1,143 @@
+body{
+    background-image: url('backgroud.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 1px;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav ul li ul li {
+    display: none;
+}
+
+nav ul li:hover ul li {
+    display: block;
+}
+
+h1{
+    font-family: "Zapf Chancery", cursive;
+    font-size: 60px;
+    background: none;
+    color: white;
+    position:absolute;
+    margin-left: 350px;
+    margin-top: 30px; 
+}
+
+h2{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 75px;
+    margin-left: 100px;
+    color: white;
+}
+
+h3{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 500px;
+    margin-left: 100px;
+    color: white;
+    
+}
+
+h4{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 20;
+    margin-top: 900px;
+    margin-left: 100px;
+    color: white;    
+}
+
+h5{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 20;
+    margin-top: 1400px;
+    margin-left: 100px;
+    color: white;    
+}
+
+h6{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 20;
+    margin-top: 1800px;
+    margin-left: 100px;
+    color: white;    
+}
+
+
+#img1 {
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 900px;
+    
+}
+
+#img2 {
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 900px;
+}
+
+#img3 {
+    position: absolute;
+    margin-top: 1040px;
+    margin-left: 900px;
+}
+
+#img4 {
+    position: absolute;
+    margin-top: 1500px;
+    margin-left: 900px;
+}
+
+#img5 {
+    position: absolute;
+    margin-top: 1875px;
+    margin-left: 900px;
+}
+
+
+
+
+
+
