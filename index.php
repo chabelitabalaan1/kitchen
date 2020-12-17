@@ -1,6 +1,6 @@
 <?php
 
-include_once("home.html");
+include_once("index.html");
 
 alert("KEEP CALM AND ENJOY COOKING!!")
 
