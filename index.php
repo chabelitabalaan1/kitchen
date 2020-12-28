@@ -56,16 +56,9 @@
         <div class="swiper-slide"><img src="chicken.jpeg" alt="" /></div>
         <div class="swiper-slide"><img src="beef.jpg" alt="" /></div>
         ...
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+      
+        </div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
 
     <script
@@ -76,28 +69,6 @@
       type="application/javascript"
       src="https://unpkg.com/swiper/swiper-bundle.min.js"
     ></script>
-    <script>
-      var mySwiper = new Swiper(".swiper-container", {
-        // Optional parameters
-        direction: "vertical",
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-      });
-    </script>
+   
   </body>
 </html>
