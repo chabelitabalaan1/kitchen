@@ -1,83 +1,83 @@
-body{
-    background-image: url('backgroud.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url("backgroud.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
-    margin-left: 80px;
-    margin-top: 30px;
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
-nav ul{
-    margin: 0px;
-    padding: 1px;
-    list-style: none;
+nav ul {
+  margin: 0px;
+  padding: 1px;
+  list-style: none;
 }
 
 nav ul li {
-    float: left;
-    width: 300px;
-    height: 40px;
-    background-color: black;
-    opacity: .8;
-    line-height: 40px;
-    text-align: center;
-    font-size: 15px;
-    font-family: sans-serif;
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  opacity: 0.8;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    display: block;
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
 nav ul li a:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 nav ul li ul li {
-    display: none;
+  display: none;
 }
 
 nav ul li:hover ul li {
-    display: block;
+  display: block;
 }
 
-h1{
-    font-family: "Zapf Chancery", cursive;
-    font-size: 60px;
-    background: none;
-    color: white;
-    position:absolute;
-    margin-left: 350px;
-    margin-top: 30px; 
+h1 {
+  font-family: "Zapf Chancery", cursive;
+  font-size: 60px;
+  background: none;
+  color: white;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 30px;
 }
 
-  .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
