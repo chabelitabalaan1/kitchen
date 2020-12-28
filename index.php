@@ -18,6 +18,7 @@
         <li><a href="index.html">HOME</a></li>
         <li>
           <a href="#">CATEGORIES</a>
+            <ul class="z-index-2"></ul>
           <ul>
             <li><a href="chicken.html">CHICKEN</a></li>
             <li><a href="beef.html">BEEF</a></li>
@@ -31,20 +32,28 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
+      
+      <h2> always cook
+             with
+           passion!!
+        
+        
+      </h2>
 
-    <div class="swiper-container">
+    <div class="swiper-container z-index-1" >
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
+        <div class="swiper-slide"><img src="curry.jpg" width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="fish.jpg"width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="chicken%20adobo.jpg"width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="BeefBrocolli.jpg"width="400px" height="400px"></div>
+        <div class="swiper-slide"><img src="dessert.jpg"width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="beef.jpg"width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="ubeCalamay.jpg"width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="letchon.jpg"width="500px" height="400px"></div>
+        <div class="swiper-slide"><img src="sweet&sourPork.jpg"width="400px" height="400px">></div>
+        <div class="swiper-slide"><img src="salmonSisig.jpg"width="500px" height="400px">></div>
       </div>
+        
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
     </div>
@@ -58,5 +67,7 @@
       src="https://unpkg.com/swiper/swiper-bundle.min.js"
     ></script>
     <script type="text/javascript" src="main.js"></script>
+      
+    
   </body>
 </html>
