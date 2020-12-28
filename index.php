@@ -1,95 +1,103 @@
-<html>
-
-<head>
-    <title> HOU HOU KITCHEN </title>
-
-    <!--CSS-->
-    <link rel="stylesheet" href="home.css">
-    <script type='text/javascript'>alert('ENJOY COOKING');</script>
-    
-    
-</head>
-
-<body>
-    <h1> FILIPINO FOOD RECIPES</h1>
-    <img src="logo.png" width="220" height="100">
-   <nav>
-     <ul>
-         <li><a href ="index.php">HOME</a></li>
-         <li><a href ="#">CATEGORIES</a>
-            <ul>
-                <li><a href ="chicken.html">CHICKEN</a></li>
-                <li><a href ="beef.html">BEEF</a></li>
-                <li><a href ="pork.html">PORK</a></li>
-                <li><a href ="fish.html">FISH</a></li>
-                <li><a href ="vegetable.html">VEGETABLE</a></li>
-                <li><a href ="dessert.html">DESSERT</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hou Hou Kitchen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="http://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-container {
+        width: 600px;
+        height: 300px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FILIPINO FOOD RECIPES</h1>
+    <img src="logo.png" width="220" height="100" />
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="#">CATEGORIES</a>
+          <ul>
+            <li><a href="chicken.html">CHICKEN</a></li>
+            <li><a href="beef.html">BEEF</a></li>
+            <li><a href="pork.html">PORK</a></li>
+            <li><a href="fish.html">FISH</a></li>
+            <li><a href="vegetable.html">VEGETABLE</a></li>
+            <li><a href="dessert.html">DESSERT</a></li>
+          </ul>
         </li>
-        <li><a href ="about.html">ABOUT US</a></li>
-        <li><a href ="contact.html">CONTACT</a></li>
-       </ul> 
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
     </nav>
-        
-    <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="sinigang-baboy.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc"> Sinigang is a Filipino soup or stew characterized by its sour and savoury taste</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="dessert.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Mango pomelo sago is a type of contemporary Hong Kong dessert.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="chicken.jpeg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Fried Chicken is a dish consisting of chicken pieces which have been coated in a seasoned.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="beef.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Beef Steak are stewed in a soy sauce and lemon juice mixture until the beef gets very tender.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="pakbet.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Pakbet is an indigenous Filipino dish from the northern regions of the Philippines.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" hrBeef Steak are stewed in a soy sauce and lemon juice mixture until the beef gets very tender.ef="img_5terre.jpg">
-            <img src="vegetable.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">beef and broccoli stir fry is a classic dish of beef sauteed coated in a savory sauce.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="fish.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Thai-style sweet and sour steamed fish Filipino Style.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="adobo.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Adobo is  marinating and stewing for any cut of meat in a briny mixture of vinegar, soy sauce, and spices.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="Kamote-Cue.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Kamote Cue is refers to skewered deep fried sweet potatoes with a coating of caramelized brown sugar.</div>
-    </div>
-    
 
- 
-        
-    
-</body>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="curry.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="chicken.jpeg" alt="" /></div>
+        <div class="swiper-slide"><img src="beef.jpg" alt="" /></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
 </html>
