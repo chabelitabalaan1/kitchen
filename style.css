@@ -1,0 +1,158 @@
+body{
+    background-image: url('backgroud.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 1px;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav ul li ul li {
+    display: none;
+}
+
+nav ul li:hover ul li {
+    display: block;
+}
+
+h1{
+    font-family: "Zapf Chancery", cursive;
+    font-size: 60px;
+    background: none;
+    color: white;
+    position:absolute;
+    margin-left: 350px;
+    margin-top: 30px; 
+}
+
+.slider{
+	position: relative;
+  	width: 800px;
+  	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 60px;
+	margin-left: auto;
+    margin-right: auto;
+	z-index: -1;
+}
+
+.slides{
+  	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img{
+  	width: 800px;
+  	height: 500px;
+}
+
+.navigation-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+  	border: 2px solid #A9A9A9;
+  	padding: 5px;
+  	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  	margin-right: 40px;
+}
+
+.manual-btn:hover{
+	background: #A9A9A9;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+.navigation-auto{
+  	position: absolute;
+  	display: flex;
+  	width: 800px;
+  	justify-content: center;
+  	margin-top: 460px;
+}
+
+.navigation-auto div{
+	border: 2px solid #A9A9A9;
+  	padding: 5px;
+	border-radius: 10px;
+  	transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  	background: #696969;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #696969;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #696969;
+}
+
