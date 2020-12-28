@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hou Hou Kitchen</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css">
-		<script type="text/javascript" src="main.js"></script>
-    </head>
-    <body> 
-		<h1> FILIPINO FOOD RECIPES</h1>
-    	<img src="logo.png" width="220" height="100">
-	   <nav>
-		 <ul>
-			 <li><a href ="index.html">HOME</a></li>
-			 <li><a href ="#">CATEGORIES</a>
-				<ul>
-					<li><a href ="chicken.html">CHICKEN</a></li>
-					<li><a href ="beef.html">BEEF</a></li>
-					<li><a href ="pork.html">PORK</a></li>
-					<li><a href ="fish.html">FISH</a></li>
-					<li><a href ="vegetable.html">VEGETABLE</a></li>
-					<li><a href ="dessert.html">DESSERT</a></li>
-				</ul>
-			</li>
-			<li><a href ="about.html">ABOUT US</a></li>
-			<li><a href ="contact.html">CONTACT</a></li>
-		   </ul> 
-		</nav>
-		<div class="slider">
-			<div class="slides">
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
-				<div class="slide first">
-					<img src="curry.jpg" alt="">
-				</div>
-				<div class="slide">
-					<img src="chicken.jpeg" alt="">
-				</div>
-				<div class="slide">
-					<img src="beef.jpg" alt="">
-				</div>
-				<div class="navigation-auto">
-					<div class="auto-btn1"></div>
-				 	<div class="auto-btn2"></div>
-					<div class="auto-btn3"></div>
-				</div>
-		  	</div>
-		<div class="navigation-manual">
-			<label for="radio1" class="manual-btn"></label>
-			<label for="radio2" class="manual-btn"></label>
-			<label for="radio3" class="manual-btn"></label>
-		</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hou Hou Kitchen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="http://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-container {
+        width: 600px;
+        height: 300px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FILIPINO FOOD RECIPES</h1>
+    <img src="logo.png" width="220" height="100" />
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="#">CATEGORIES</a>
+          <ul>
+            <li><a href="chicken.html">CHICKEN</a></li>
+            <li><a href="beef.html">BEEF</a></li>
+            <li><a href="pork.html">PORK</a></li>
+            <li><a href="fish.html">FISH</a></li>
+            <li><a href="vegetable.html">VEGETABLE</a></li>
+            <li><a href="dessert.html">DESSERT</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="curry.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="chicken.jpeg" alt="" /></div>
+        <div class="swiper-slide"><img src="beef.jpg" alt="" /></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
 
-   
-    </body>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
 </html>
